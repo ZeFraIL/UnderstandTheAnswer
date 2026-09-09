@@ -1,0 +1,5 @@
+- `[x]` Создание класса `LanguageManager.java` (SharedPreferences + AppCompatDelegate)
+- `[x]` Создание русской локали `res/values-ru/strings.xml` и перевод `res/values/strings.xml` на английский
+- `[x]` Обновление `activity_start.xml` (добавление `app_icon` и переключателя языков)
+- `[x]` Обновление `StartActivity.java` (инициализация языка и обработка кликов)
+- `[x]` Сборка и проверка проекта через Gradle

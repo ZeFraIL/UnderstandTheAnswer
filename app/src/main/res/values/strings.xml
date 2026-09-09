@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Understand The Answer</string>
+    <string name="app_subtitle">Math "In Reverse"</string>
+    <string name="app_description">In traditional math, you enter parameters and get a result.\n\nIn "Understand The Answer", it\'s the opposite: you are given a graph or result, and you must reconstruct the initial conditions!</string>
+    <string name="start_btn_text">Start</string>
+
+    <string name="select_topic_title">Select Topic</string>
+    <string name="topic_point_title">Point in Coordinate System</string>
+    <string name="topic_point_desc">Determine point coordinates (x, y) from the grid plot.</string>
+
+    <string name="topic_linear_title">Linear Function</string>
+    <string name="topic_linear_desc">Reconstruct equation y = kx + b from line graphs.</string>
+
+    <string name="topic_quadratic_title">Quadratic Function</string>
+    <string name="topic_quadratic_desc">Reconstruct coefficients of y = ax² + bx + c.</string>
+
+    <string name="status_active">Available</string>
+    <string name="status_coming_soon">Coming Soon</string>
+
+    <string name="fragment_point_title">Point in Coordinate System</string>
+    <string name="fragment_linear_title">Linear Function (y = kx + b)</string>
+    <string name="fragment_parabola_title">Quadratic Function (y = ax² + bx + c)</string>
+
+    <string name="grid_placeholder_text">Function graph is shown on the grid.\nFind coefficients k and b!</string>
+    <string name="grid_canvas_placeholder">[ Coordinate Grid Canvas ]</string>
+    <string name="label_x">X</string>
+    <string name="label_y">Y</string>
+    <string name="label_k">k</string>
+    <string name="label_b">b</string>
+    <string name="label_a">a</string>
+    <string name="label_c">c</string>
+    <string name="btn_check">Check</string>
+    <string name="btn_hint">Hint</string>
+    <string name="btn_new_point">New Point</string>
+    <string name="btn_new_task">New Task</string>
+    <string name="btn_calc_details">Show Calculation</string>
+    <string name="btn_show_solution">Show Solution</string>
+    <string name="btn_close">Close</string>
+
+    <string name="hint_placeholder">Tap grid to place a hint point or click "Hint".</string>
+    <string name="hint_linear_placeholder">Use tools above or enter coefficients k and b.</string>
+    <string name="hint_parabola_placeholder">Use tools above or enter coefficients a, b, c.</string>
+
+    <string name="switch_grid_label">Grid</string>
+    <string name="switch_axis_values_label">Axis Values</string>
+
+    <string name="mode_parallel">1. Parallel Line</string>
+    <string name="mode_two_points">2. Line Through 2 Points</string>
+    <string name="mode_points_on_line">3. Points on Graph</string>
+
+    <string name="mode_parabola_transformer">1. Template Transformer</string>
+    <string name="mode_parabola_axis">2. Axis of Symmetry</string>
+    <string name="mode_parabola_points">3. 3 Points on Graph</string>
+
+    <string name="dialog_help_title">Rules &amp; Features</string>
+    <string name="dialog_help_content"><![CDATA[
+<b>🎯 Goal:</b><br>
+An unknown point <b>A</b> is generated on the coordinate plane. Your task is to determine its exact integer coordinates <b>(X, Y)</b> and enter them below.<br><br>
+
+<b>🛠 Available Tools:</b><br><br>
+
+📍 <b>Hint Points (up to 2):</b><br>
+Tap anywhere on the grid to place a blue hint point H with its coordinates.<br><br>
+
+✋ <b>Drag and Drop:</b><br>
+Hold and drag any blue hint point across the coordinate plane. Its coordinates update live!<br><br>
+
+🛡️ <b>Anti-Cheat Protection:</b><br>
+You cannot place or drag a hint point closer than <b>2 units</b> to target point A. A red warning zone flashes if you enter this area.<br><br>
+
+💡 <b>"Hint" Button:</b><br>
+Indicates the quadrant or axis where point A lies.<br><br>
+
+⚙️ <b>"Grid" and "Axis Values" Switches:</b><br>
+Hide or show grid lines and number labels to adjust difficulty.<br><br>
+
+🔄 <b>"New Point" Button:</b><br>
+Generates a new random target point for practice.
+]]></string>
+
+    <string name="dialog_linear_help_title">Rules: Linear Function</string>
+    <string name="dialog_linear_help_content"><![CDATA[
+<b>🎯 Goal:</b><br>
+A blue graph of an unknown linear function <b>y = kx + b</b> is shown. Your task is to determine slope <b>k</b> and intercept <b>b</b>.<br><br>
+
+<b>🛠 Hint Tools:</b><br><br>
+
+1️⃣ <b>Parallel Line:</b><br>
+Shows an auxiliary orange line with known equation. Drag it vertically. Anti-cheat prevents moving it too close to the target graph.<br><br>
+
+2️⃣ <b>Line Through 2 Points:</b><br>
+Place 2 green points P1 and P2 to draw an auxiliary line. Click "Show Calculation" for step-by-step formulas for k and b!<br><br>
+
+3️⃣ <b>Points on Graph:</b><br>
+Tap the blue target line to reveal up to 4 exact integer points on it.
+]]></string>
+
+    <string name="dialog_parabola_help_title">Rules: Quadratic Function</string>
+    <string name="dialog_parabola_help_content"><![CDATA[
+<b>🎯 Goal:</b><br>
+A blue parabola <b>y = ax² + bx + c</b> is shown. Your task is to determine coefficients <b>a</b>, <b>b</b>, and <b>c</b>.<br><br>
+
+<b>🛠 Hint Tools:</b><br><br>
+
+1️⃣ <b>Template Transformer:</b><br>
+Use an interactive orange template parabola <b>y = a(x - x₀)² + y₀</b>. Drag its vertex with your finger and toggle coefficient a.<br><br>
+
+2️⃣ <b>Axis of Symmetry:</b><br>
+Drag a vertical axis line x = x₀. When matched with the parabola\'s axis, it highlights the vertex formula: <b>x₀ = -b / (2a)</b>.<br><br>
+
+3️⃣ <b>3 Points on Graph:</b><br>
+Tap the blue parabola to reveal up to 3 points M1, M2, M3. Revealing 2 or more points opens the 3-equation system calculator!
+]]></string>
+
+    <string name="dialog_calc_title">Step-by-Step Function Calculation</string>
+    <string name="dialog_interactive_calc_title">Calculation From Revealed Points</string>
+    <string name="dialog_parabola_calc_title">System of 3 Equations for Parabola</string>
+
+    <string name="label_step1_k">Step 1: Calculate slope k\nk = (y2 - y1) / (x2 - x1)</string>
+    <string name="label_step2_b">Step 2: Calculate intercept b\nb = y1 - k · x1</string>
+
+    <string name="msg_enter_both">Please enter both values (X and Y).</string>
+    <string name="msg_enter_kb">Please enter coefficients k and b.</string>
+    <string name="msg_enter_abc">Please enter all three coefficients (a, b, c).</string>
+
+    <string name="msg_correct">Correct! Great job! You found the coordinates.</string>
+    <string name="msg_linear_correct">Correct! Great job! You found the parameters of y = kx + b.</string>
+    <string name="msg_parabola_correct">Correct! Great job! You found the coefficients of y = ax² + bx + c.</string>
+
+    <string name="msg_incorrect">Incorrect. Try again or use a hint.</string>
+    <string name="msg_linear_incorrect">Incorrect. Check slope k or intercept b.</string>
+    <string name="msg_parabola_incorrect">Incorrect. Check coefficients a, b, or c.</string>
+    <string name="msg_invalid_number">Please enter valid numbers.</string>
+
+    <string name="msg_too_close">⚠️ Too close to the target point! (Anti-cheat protection 😉)</string>
+    <string name="msg_parallel_too_close">⚠️ Too close to the target graph! (Anti-cheat protection 😉)</string>
+    <string name="msg_parabola_vertex_too_close">⚠️ Template vertex too close to target! (Anti-cheat protection 😉)</string>
+
+    <string name="msg_hint_point_added">📍 Placed hint point H%1$d(%2$d, %3$d). Hints remaining: %4$d</string>
+    <string name="msg_hint_point_dragged">📍 Dragged hint point H%1$d(%2$d, %3$d)</string>
+    <string name="msg_max_hints_reached">All 2 hint points used. You can drag them with your finger!</string>
+
+    <string name="hint_quadrant_1">Hint: Point is in Quadrant I (X &gt; 0, Y &gt; 0).</string>
+    <string name="hint_quadrant_2">Hint: Point is in Quadrant II (X &lt; 0, Y &lt; 0).</string>
+    <string name="hint_quadrant_3">Hint: Point is in Quadrant III (X &lt; 0, Y &lt; 0).</string>
+    <string name="hint_quadrant_4">Hint: Point is in Quadrant IV (X &gt; 0, Y &lt; 0).</string>
+</resources>

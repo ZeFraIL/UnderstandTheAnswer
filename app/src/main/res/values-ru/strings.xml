@@ -1,0 +1,147 @@
+<resources>
+    <string name="app_name">Пойми ответ</string>
+    <string name="app_subtitle">Математика «наоборот»</string>
+    <string name="app_description">В традиционной математике вы вводите данные и получаете результат.\n\nВ «Пойми ответ» всё наоборот: вам даётся готовый график или результат, а вы должны восстановить исходные условия!</string>
+    <string name="start_btn_text">Начать</string>
+
+    <string name="select_topic_title">Выберите тему</string>
+    <string name="topic_point_title">Точка в системе координат</string>
+    <string name="topic_point_desc">Определите координаты точки (x, y) по рисунку на сетке.</string>
+
+    <string name="topic_linear_title">Линейная функция</string>
+    <string name="topic_linear_desc">Восстановите уравнение вида y = kx + b по графику прямых.</string>
+
+    <string name="topic_quadratic_title">Квадратичная функция</string>
+    <string name="topic_quadratic_desc">Восстановите коэффициенты функции y = ax² + bx + c.</string>
+
+    <string name="status_active">Доступно</string>
+    <string name="status_coming_soon">Скоро</string>
+
+    <string name="fragment_point_title">Точка в системе координат</string>
+    <string name="fragment_linear_title">Линейная функция (y = kx + b)</string>
+    <string name="fragment_parabola_title">Квадратичная функция (y = ax² + bx + c)</string>
+
+    <string name="grid_placeholder_text">График функции показан на сетке.\nНайдите коэффициенты k и b!</string>
+    <string name="grid_canvas_placeholder">[ Область графической системы координат ]</string>
+    <string name="label_x">X</string>
+    <string name="label_y">Y</string>
+    <string name="label_k">k</string>
+    <string name="label_b">b</string>
+    <string name="label_a">a</string>
+    <string name="label_c">c</string>
+    <string name="btn_check">Проверить</string>
+    <string name="btn_hint">Подсказка</string>
+    <string name="btn_new_point">Новая точка</string>
+    <string name="btn_new_task">Новое задание</string>
+    <string name="btn_calc_details">Показать расчёт</string>
+    <string name="btn_show_solution">Показать решение</string>
+    <string name="btn_close">Закрыть</string>
+
+    <string name="hint_placeholder">Нажмите на график для установки точки-подсказки или кликайте «Подсказка».</string>
+    <string name="hint_linear_placeholder">Используйте инструменты выше или введите коэффициенты k и b.</string>
+    <string name="hint_parabola_placeholder">Используйте инструменты выше или введите коэффициенты a, b, c.</string>
+
+    <string name="switch_grid_label">Сетка</string>
+    <string name="switch_axis_values_label">Значения на осях</string>
+
+    <string name="mode_parallel">1. Параллельная прямая</string>
+    <string name="mode_two_points">2. Прямая по 2 точкам</string>
+    <string name="mode_points_on_line">3. Точки на графике</string>
+
+    <string name="mode_parabola_transformer">1. Шаблон-Трансформер</string>
+    <string name="mode_parabola_axis">2. Ось симметрии</string>
+    <string name="mode_parabola_points">3. 3 точки на графике</string>
+
+    <string name="dialog_help_title">Правила и возможности</string>
+    <string name="dialog_help_content"><![CDATA[
+<b>🎯 Главная цель:</b><br>
+На координатной плоскости сгенерирована неизвестная точка <b>A</b>. Ваша задача — определить её точные целочисленные координаты <b>(X, Y)</b> и ввести их в поля ниже.<br><br>
+
+<b>🛠 Доступные инструменты:</b><br><br>
+
+📍 <b>Точки-подсказки (до 2-х):</b><br>
+Нажмите на любое место сетки, чтобы поставить синюю точку-подсказку H с её координатами.<br><br>
+
+✋ <b>Перетаскивание пальцем:</b><br>
+Зажмите синюю точку-подсказку и перемещайте её в любую часть координатной плоскости. Её координаты будут меняться на лету!<br><br>
+
+🛡️ <b>Защита от хитрости:</b><br>
+Запрещено ставить или подтаскивать подсказку ближе чем на <b>2 единицы</b> к искомой точке A. При попытке войти в эту область зажигается красная предупреждающая зона.<br><br>
+
+💡 <b>Кнопка «Подсказка»:</b><br>
+Указывает координатную четверть или ось, на которой лежит точка A.<br><br>
+
+⚙️ <b>Переключатели «Сетка» и «Значения на осях»:</b><br>
+Позволяют скрыть или показать сетку и числовые метки осей для усложнения или упрощения задачи.<br><br>
+
+🔄 <b>Кнопка «Новая точка»:</b><br>
+Генерирует новую случайную точку для тренировки.
+]]></string>
+
+    <string name="dialog_linear_help_title">Правила: Линейная функция</string>
+    <string name="dialog_linear_help_content"><![CDATA[
+<b>🎯 Главная цель:</b><br>
+На сетке изображен синий график неизвестной линейной функции <b>y = kx + b</b>. Ваша задача — определить угловой коэффициент <b>k</b> и свободный член <b>b</b>.<br><br>
+
+<b>🛠 Инструменты-подсказки:</b><br><br>
+
+1️⃣ <b>Параллельная прямая:</b><br>
+Показывает вспомогательную оранжевую прямую с известным уравнением. Вы можете перетаскивать её вверх/вниз пальцем. Защита от хитрости не позволяет подвести её слишком близко к искомому графику.<br><br>
+
+2️⃣ <b>Прямая по 2 точкам:</b><br>
+Позволяет поставить 2 зелёные точки P1 и P2, через которые проводится вспомогательная линия. Нажмите «Показать расчёт», чтобы увидеть пошаговые формулы вычисления k и b!<br><br>
+
+3️⃣ <b>Точки на графике:</b><br>
+Кликните по синей прямой, чтобы выявить до 4-х точных целочисленных точек, лежащих на искомом графике.
+]]></string>
+
+    <string name="dialog_parabola_help_title">Правила: Квадратичная функция</string>
+    <string name="dialog_parabola_help_content"><![CDATA[
+<b>🎯 Главная цель:</b><br>
+На сетке изображен синий график параболы <b>y = ax² + bx + c</b>. Ваша задача — определить коэффициенты <b>a</b>, <b>b</b> и <b>c</b>.<br><br>
+
+<b>🛠 Инструменты-подсказки:</b><br><br>
+
+1️⃣ <b>Шаблон-Трансформер:</b><br>
+Вы получаете интерактивную оранжевую параболу <b>y = a(x - x₀)² + y₀</b>. Зажмите и перетаскивайте её вершину пальцем, а кнопкой регулируйте ширину и направление ветвей (a). Защита от хитрости не позволяет подвести её вершину ближе 2-х единиц.<br><br>
+
+2️⃣ <b>Ось симметрии:</b><br>
+Позволяет перетаскивать вертикальную ось симметрии x = x₀. При точном совпадении с осью параболы вы увидите формулу вершины: <b>x₀ = -b / (2a)</b>.<br><br>
+
+3️⃣ <b>3 точки на графике:</b><br>
+Кликните по синей параболе, чтобы выявить до 3-х целочисленных точек M1, M2, M3. При выявлении 2-х и более точек откроется калькулятор системы 3-х уравнений!
+]]></string>
+
+    <string name="dialog_calc_title">Пошаговый расчёт функции</string>
+    <string name="dialog_interactive_calc_title">Расчёт по выявленным точкам</string>
+    <string name="dialog_parabola_calc_title">Система 3-х уравнений для параболы</string>
+
+    <string name="label_step1_k">Шаг 1: Вычислите угловой коэффициент k\nk = (y2 - y1) / (x2 - x1)</string>
+    <string name="label_step2_b">Шаг 2: Вычислите свободный член b\nb = y1 - k · x1</string>
+
+    <string name="msg_enter_both">Пожалуйста, введите оба значения (X и Y).</string>
+    <string name="msg_enter_kb">Пожалуйста, введите коэффициенты k и b.</string>
+    <string name="msg_enter_abc">Пожалуйста, введите все три коэффициента (a, b, c).</string>
+
+    <string name="msg_correct">Правильно! Замечательно! Вы верно определили координаты.</string>
+    <string name="msg_linear_correct">Правильно! Замечательно! Вы верно определили параметры функции y = kx + b.</string>
+    <string name="msg_parabola_correct">Правильно! Замечательно! Вы верно определили коэффициенты параболы y = ax² + bx + c.</string>
+
+    <string name="msg_incorrect">Неверно. Попробуйте ещё раз или используйте подсказку.</string>
+    <string name="msg_linear_incorrect">Неверно. Проверьте значение углового коэффициента k или сдвига b.</string>
+    <string name="msg_parabola_incorrect">Неверно. Проверьте значения коэффициентов a, b или c.</string>
+    <string name="msg_invalid_number">Введите корректные числа.</string>
+
+    <string name="msg_too_close">⚠️ Слишком близко к искомой точке! (Защита от хитрости 😉)</string>
+    <string name="msg_parallel_too_close">⚠️ Слишком близко к искомому графику! (Защита от хитрости 😉)</string>
+    <string name="msg_parabola_vertex_too_close">⚠️ Вершина шаблона слишком близко к искомой! (Защита от хитрости 😉)</string>
+
+    <string name="msg_hint_point_added">📍 Поставлена точка-подсказка H%1$d(%2$d, %3$d). Осталось подсказок: %4$d</string>
+    <string name="msg_hint_point_dragged">📍 Перемещена точка-подсказка H%1$d(%2$d, %3$d)</string>
+    <string name="msg_max_hints_reached">Использованы все 2 точки-подсказки. Их можно перетаскивать пальцем!</string>
+
+    <string name="hint_quadrant_1">Подсказка: точка находится в I координатной четверти (X &gt; 0, Y &gt; 0).</string>
+    <string name="hint_quadrant_2">Подсказка: точка находится во II координатной четверти (X &lt; 0, Y &gt; 0).</string>
+    <string name="hint_quadrant_3">Подсказка: точка находится в III координатной четверти (X &lt; 0, Y &lt; 0).</string>
+    <string name="hint_quadrant_4">Подсказка: точка находится в IV координатной четверти (X &gt; 0, Y &gt; 0).</string>
+</resources>
