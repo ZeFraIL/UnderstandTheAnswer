@@ -25,7 +25,7 @@
 ### Method: `onCreateView(...)`
 - **Method Type:** `public`
 - **Return Value:** `View`
-- **What it does:** Inflates layout, binds views, attaches `ChipGroup` mode selector, sets up `ParabolaFunctionView` listener, and calls `generateNewTask()`.
+- **What it does:** Inflates layout `fragment_parabola_function.xml` (using `CoordinatorLayout` and persistent `BottomSheetBehavior`), binds views, attaches `ChipGroup` mode selector, sets up `ParabolaFunctionView` listener, and calls `generateNewTask()`.
 
 ### Method: `generateNewTask()`
 - **Method Type:** `private`
@@ -50,7 +50,10 @@
 ---
 
 ## 5. Interface Interaction (UI)
-Binds `ParabolaFunctionView`, `ChipGroup`, `MaterialSwitch`es, `EditText` inputs with expression evaluators, and dialogs.
+- **Layout Architecture:** `CoordinatorLayout` root.
+  - Pinned Top Area: `ParabolaFunctionView` and `cardTopCalcInfo` stay fixed at top of screen without scrolling.
+  - Persistent Bottom Sheet (`bottomSheetCard`): Anchored at bottom with `peekHeight="190dp"` containing drag handle, input fields $a, b, c$, action buttons, `ChipGroup` mode selector, template $a$ toggle button, grid switches, and feedback text.
+- **Handled Events:** Button clicks, chip selection, toggle switches, and touch gestures on Canvas.
 
 ---
 
@@ -60,9 +63,9 @@ Embedded in `MainActivity`.
 ---
 
 ## 7. General Logic of the Class
-Generates random quadratic function tasks, provides 3 hint tools, parses mathematical expressions, and checks student answers.
+Generates random quadratic function tasks, provides 3 hint tools, parses mathematical expressions, and checks student answers inside a persistent bottom sheet controls panel.
 
 ---
 
 ## 8. Explanation in Simple Words
-`ParabolaFunctionFragment` is a **parabola trainer**. It hides a parabola, lets you use 3 hint tools to inspect its shape, and evaluates your $a, b, c$ answers!
+`ParabolaFunctionFragment` is a **parabola trainer**. It hides a parabola on a top-pinned board, lets you use 3 hint tools in a pull-up bottom drawer, and evaluates your $a, b, c$ answers!

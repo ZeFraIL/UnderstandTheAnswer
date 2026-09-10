@@ -25,7 +25,7 @@
 ### Method: `onCreateView(...)`
 - **Method Type:** `public`
 - **Return Value:** `View` (Inflated fragment layout).
-- **What it does:** Inflates layout, binds views, attaches grid/axis switches, wires buttons ("Check", "Hint", "New Point"), and calls `generateNewPoint()`.
+- **What it does:** Inflates layout `fragment_coordinate_point.xml` (using `CoordinatorLayout` and persistent `BottomSheetBehavior`), binds views, attaches grid/axis switches, wires buttons ("Check", "Hint", "New Point"), and calls `generateNewPoint()`.
 
 ### Method: `generateNewPoint()`
 - **Method Type:** `private`
@@ -50,7 +50,10 @@
 ---
 
 ## 5. Interface Interaction (UI)
-Binds `CoordinatePlaneView`, `EditText` inputs, `MaterialSwitch` toggles, and Action Buttons.
+- **Layout Architecture:** `CoordinatorLayout` root.
+  - Pinned Top Area: `CoordinatePlaneView` stays fixed at top of screen without scrolling.
+  - Persistent Bottom Sheet (`bottomSheetCard`): Anchored at bottom with `peekHeight="180dp"` containing drag handle, input fields $X, Y$, action buttons, grid switches, and feedback text.
+- **Handled Events:** Button clicks, toggle switches, and touch gestures on Canvas.
 
 ---
 
@@ -60,9 +63,9 @@ Embedded inside `MainActivity`.
 ---
 
 ## 7. General Logic of the Class
-Generates a secret point $A$ on the grid, processes user hints and drag gestures, and evaluates submitted coordinates.
+Generates a secret point $A$ on the grid, processes user hints and drag gestures, and evaluates submitted coordinates inside a persistent bottom sheet controls panel.
 
 ---
 
 ## 8. Explanation in Simple Words
-`CoordinatePointFragment` is like a **game referee**. It chooses where the secret point $A$ is hidden, checks your guesses, and gives you helpful hints!
+`CoordinatePointFragment` is like a **game referee**. It chooses where the secret point $A$ is hidden on a top-pinned graph board, while keeping the answer controls in a pull-up drawer at the bottom!
